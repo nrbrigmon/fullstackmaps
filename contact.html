@@ -1,0 +1,115 @@
+---
+layout: page
+title: Contact us!
+active: contact
+permalink: /contact/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Drop Us A Note</h1>
+          <p>Talk some shop!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact form start -->
+<section id="contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 colcol-sm-12">
+        <div class="block">
+        <form id="formaction" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" class="form-control" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="_replyto" class="form-control" placeholder="Your email">
+          </div>
+            <input type="text" name="_gotcha" style="display:none" value="spambot" />
+            <input type="hidden" name="_next" value="{{ site.baseurl }}/thank-you" />
+          <div class="form-group">
+            <label for="subject">Message:</label>
+            <textarea class="form-control" rows="3" placeholder="Hi!..."></textarea>
+          </div>
+          <button class="btn btn-default" type="submit" value="Send">Send Message</button>
+        </form>
+        <script>
+            var contactform =  document.getElementById('formaction');
+            contactform.setAttribute('action', '//formspree.io/' + 'nrbrigmon' + '@' + 'gmail' + '.' + 'com');
+        </script>
+        </div>
+      </div>
+    <div id="contact-box" class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>Stop By For A visit</h2>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-map-marker"></i>Austin, TX
+            </li>
+           <!--  <li>
+              <i class="fa fa-envelope-o"></i>Email: nrbrigmon@gmail.com
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>Phone:+1 843 696 5893
+            </li> -->
+          </ul>
+
+          <ul class="social-icons">
+            <!-- li>
+              <a href="http://www.themefisher.com"><i class="fa fa-google"></i></a>
+            </li> -->
+            <li> 
+              <a href="https://www.linkedin.com/in/nathan-brigmon-a3a32b52"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <!-- <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-dribbble"></i></a>
+            </li> -->
+            <!-- <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-behance"></i></a>
+            </li> -->
+            <li>
+              <a href="http://www.twitter.com/natebrigmon"><i class="fa fa-twitter"></i></a>
+            </li>
+            <!-- <li>
+              <a href="http://www.themefisher.com"><i class="fa fa-facebook"></i></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>Based in Austin, TX</h2>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13783.94591260655!2d-97.744399083313!3d30.265966473966337!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1481937707249" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design informative digital tools.</h2>
+          <p>We build, but we also share and teach. Check out our blog to learn more: </p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/blog">Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
