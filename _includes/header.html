@@ -15,16 +15,16 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
-              <img id="bootstrap-override" src="{{ site.baseurl }}/imgs/stacked-logo-2016-12-17.png" alt="Logo">
+              <img id="bootstrap-override" src="{{ site.baseurl }}/imgs/header_logo.png" alt="Logo">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                    {% if page.active == "about" %}
-                <li><a href="{{ site.baseurl }}/" class="active">About</a></li>
+                    {% if page.active == "home" %}
+                <li><a href="{{ site.baseurl }}/" class="active">Home</a></li>
                     {% else %}
-                <li><a href="{{ site.baseurl }}/">About</a></li>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
                     {% endif %}
                     <!-- 
                     {% if page.active == "projects" %}

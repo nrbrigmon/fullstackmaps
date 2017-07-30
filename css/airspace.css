@@ -79,7 +79,7 @@ header .navbar {
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 5px;
+  padding-top: 0px;
 }
 header .navbar-default {
   background: none;
@@ -114,6 +114,7 @@ nav.navbar.shrink {
 }
 nav.navbar.shrink img#bootstrap-override {
     width: 120px;
+    margin-left: 5px;
     margin-top: 5px;
 }
 nav.navbar, img#bootstrap-override{
