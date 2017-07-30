@@ -21,21 +21,22 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
-                    {% if page.active == "home" %}
-                <li><a href="{{ site.baseurl }}/" class="active">Home</a></li>
+                    {% if page.active == "about" %}
+                <li><a href="{{ site.baseurl }}/" class="active">About</a></li>
                     {% else %}
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/">About</a></li>
                     {% endif %}
+                    <!-- 
                     {% if page.active == "projects" %}
                 <li><a href="{{ site.baseurl }}/projects" class="active">Projects</a></li>
                     {% else %}
                 <li><a href="{{ site.baseurl }}/projects">Projects</a></li>
-                    {% endif %}
-                    {% if page.active == "blog" %}
+                    {% endif %} -->
+                   <!--  {% if page.active == "blog" %}
                 <li><a href="{{ site.baseurl }}/blog" class="active">Blog</a></li>
                     {% else %}
                 <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-                    {% endif %}
+                    {% endif %} -->
                 <!-- <li><a href="{{ site.baseurl }}/pricing">Pricing</a></li> -->
                     {% if page.active == "contact" %}
                 <li><a href="{{ site.baseurl }}/contact" class="active">Contact</a></li>
