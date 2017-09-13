@@ -1,0 +1,181 @@
+---
+layout: page
+active: about
+title: Full Stack Maps
+permalink: /about/
+---
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+<style>
+.sidebar {
+  position:fixed;
+  right:20px;
+}
+.sidebar ul li{
+  margin:5px;
+  cursor: pointer;
+}
+#resume-section{
+  display:none;
+}
+a, a:hover, a:visited, a:active{
+  text-decoration:none;
+}
+.card {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+</style>
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp">About</h1>
+          <p class="animated fadeInUp"> </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="container">
+  <!-- Content here -->
+  <div class="row">
+    
+    <div id="portfolio-section" class="col-sm-8">
+    </div>
+    <div id="resume-section" class="col-sm-8">
+      hi!!!
+    </div>
+    
+    <div class="col-sm-3 offset-sm-1 sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item btn btn-primary" role="button" id="view-portfolio">
+          <a >Portfolio</a>
+        </li>
+        <li class="nav-item btn btn-primary" role="button" id="view-resume">
+          <a >Resume</a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</div>
+<script type="text/javascript">
+  var portfolio = [
+  {
+    "name":"Full Stack Maps",
+    "link":"http://fullstackmaps.com",
+    "description":"A website I set up for my consulting business. ",
+    "date":"Summer 2017",
+    "tech":['Jekyll', 'Github Pages']
+  },
+  {
+    "name":"East Arkansas Planning and Development District",
+    "link":"http://eapdd.com",
+    "description":"A low cost GIS solution for rural communities in East Arkansas. We also built tutorials.",
+    "date":"Fall 2014",
+    "tech":['Google Maps API', 'Google Fusion Tables', 'Wordpress']
+  },
+  {
+    "name":"CFNCR",
+    "link":"??????",
+    "description":"Searchable, sortable, interative web map built for nonprofit, workforce development research.",
+    "date":"Winter 2016",
+    "tech":['CartoDB', 'DataTables JS', 'Leaflet']
+  },
+  {
+    "name":"Sonoma-Mendocino Counties",
+    "link":"??????",
+    "description":"Wordpress site with web map for visualizing data in rural Northern California.",
+    "date":"Spring 2016",
+    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2 Hosting']
+  },
+  {
+    "name":"Moovel/Ridescout ",
+    "link":"??????",
+    "description":"Interactive map visualizing people an jobs to assist with transit route alignment.",
+    "date":"Summer 2015",
+    "tech":['Leaflet', 'GitHub Pages']
+  },
+  {
+    "name":"Chapa IO",
+    "link":"??????",
+    "description":"Website to support brazilian housing study in Sao Paulo.",
+    "date":"Fall 2016",
+    "tech":['Squarespace']
+  },
+  {
+    "name":"Dados Comunidados",
+    "link":"??????",
+    "description":"Interactive Web Map showing survey results of brazilian housing study in Sao Paulo.",
+    "date":"Fall 2016",
+    "tech":['GitHub Pages', 'Google Domains', 'Leaflet']
+  },
+  {
+    "name":"Utah Area of Governments",
+    "link":"??????",
+    "description":"Interactive Web Map showing location of statewide businesses by industry.",
+    "date":"Spring 2016",
+    "tech":['GitHub Pages', 'Leaflet']
+  },
+  {
+    "name":"Austin Code Task List Router",
+    "link":"??????",
+    "description":"At Austin Code I built a router based off Code Inspectors' task list to help them route their day.",
+    "date":"Spring 2017",
+    "tech":['GitHub Pages', 'Google Maps API', 'Google Directions API', 'Dragula JS', 'Socrata API']
+  },
+  {
+    "name":"Launch2035",
+    "link":"??????",
+    "description":"Dashboard, Data Warehouse, and Web Map to support regional data initiative.",
+    "date":"Spring 2015",
+    "tech":['Angular 2-BETA', 'Leaflet', 'AWS EC2 Hosted', 'Node JS', 'GeoServer']
+  },
+  {
+    "name":"3D Civic Warehouse",
+    "link":"??????",
+    "description":"To demonstrate potential for 3D in urban planning and open source, I built this small application.",
+    "date":"Winter 2014",
+    "tech":['Cesium JS', 'GitHub Pages']
+  }
+]
+
+//section for looping through projects and appending to project page
+
+for (let project of portfolio){
+  //loop through tech array and create search links
+  let tech = project["tech"].reduce(function(prev, next, i){
+    if (i == 1){
+      prev = '<a target="_blank" href="https://www.google.com/search?q='+prev.replace(/ /g, "+")+'" class="card-link">'+prev+'</a>';
+    }
+    return prev.concat('<a target="_blank" href="https://www.google.com/search?q='+next.replace(/ /g, "+")+'" class="card-link">'+next+'</a>');
+  });
+  let template = '<div class="card"><div class="card-body">'+
+    '<h4 class="card-title"><a target="_blank" href="'+project["link"]+'">'+project["name"]+'</a></h4>'+
+    '<h6 class="card-subtitle mb-2 text-muted">'+project["date"]+'</h6>'+
+    '<p class="card-text">'+project["description"]+'</p>'+
+    tech+'</div></div>';
+  $("#portfolio-section").append(template);
+}
+
+//section for switching between portfolio and resume
+$("#view-portfolio").on('click', function(){
+  console.log('click!')
+  $("#resume-section").hide();
+  $("#portfolio-section").show();
+});
+
+$("#view-resume").on('click', function(){
+  $("#portfolio-section").hide();
+  $("#resume-section").show();
+});
+
+
+</script>
+ 
