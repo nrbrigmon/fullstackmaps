@@ -9,10 +9,16 @@ permalink: /about/
 .sidebar {
   position:fixed;
   right:20px;
+  top:inherit;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
 }
 .sidebar ul li{
   margin:5px;
   cursor: pointer;
+}
+.adjust{
+  top:50px;
 }
 #resume-section{
   display:none;
@@ -48,7 +54,7 @@ a, a:hover, a:visited, a:active{
     margin-bottom: 0;
 }
 .card-link{
-  margin:0px 12px 0px 0px;
+  margin:0px 20px 0px 0px;
 }
 </style>
 <!-- Slider Start -->
@@ -117,7 +123,7 @@ a, a:hover, a:visited, a:active{
     "link":"??????",
     "description":"Wordpress site with web map for visualizing data in rural Northern California.",
     "date":"Spring 2016",
-    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2 Hosting']
+    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2']
   },
   {
     "name":"Moovel/Ridescout ",
@@ -131,7 +137,7 @@ a, a:hover, a:visited, a:active{
     "link":"??????",
     "description":"Website to support brazilian housing study in Sao Paulo.",
     "date":"Fall 2016",
-    "tech":['Squarespace']
+    "tech":['Squarespace', 'GoDaddy']
   },
   {
     "name":"Dados Comunidados",
@@ -159,7 +165,7 @@ a, a:hover, a:visited, a:active{
     "link":"??????",
     "description":"Dashboard, Data Warehouse, and Web Map to support regional data initiative.",
     "date":"Spring 2015",
-    "tech":['Angular 2-BETA', 'Leaflet', 'AWS EC2 Hosted', 'Node JS', 'GeoServer']
+    "tech":['Angular 2-BETA', 'Leaflet', 'AWS EC2', 'Node JS', 'GeoServer']
   },
   {
     "name":"3D Civic Warehouse",
@@ -200,6 +206,12 @@ $("#view-resume").on('click', function(){
   $("#resume-section").show();
 });
 
-
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+      $('.sidebar').addClass('adjust');
+    } else {
+      $('.sidebar').removeClass('adjust');
+    }
+  });
 </script>
  
