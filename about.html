@@ -23,7 +23,31 @@ a, a:hover, a:visited, a:active{
 .card {
   margin-top:5px;
   margin-bottom:5px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
 }
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0;
+}
+
 </style>
 <!-- Slider Start -->
 <section id="slider">
@@ -54,10 +78,10 @@ a, a:hover, a:visited, a:active{
     <div class="col-sm-3 offset-sm-1 sidebar">
       <ul class="nav flex-column">
         <li class="nav-item btn btn-primary" role="button" id="view-portfolio">
-          <a >Portfolio</a>
+          Portfolio
         </li>
         <li class="nav-item btn btn-primary" role="button" id="view-resume">
-          <a >Resume</a>
+          Resume
         </li>
       </ul>
     </div>
