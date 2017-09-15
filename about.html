@@ -6,59 +6,64 @@ permalink: /about/
 ---
 
 <style>
-.sidebar {
-  position: fixed;
-  top: 387px;
-  width: 200px;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-.sidebar ul li{
-  margin:5px;
-  cursor: pointer;
-}
-.adjust{
-  top:50px;
-}
-#resume-section{
-  display:none;
-}
-#about-main{
-  margin-bottom: 250px;
-}
-a, a:hover, a:visited, a:active{
-  text-decoration:none;
-}
-.card {
-  margin-top:5px;
-  margin-bottom:5px;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-}
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-.card-title {
-    margin-bottom: .75rem;
-}
-.card-subtitle {
-    margin-top: -.375rem;
-    margin-bottom: 0;
-}
-.card-link{
-  margin:0px 20px 0px 0px;
-}
+  .sidebar {
+    position: fixed;
+    top: 383px;
+    width: 200px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+  }
+  .sidebar ul li{
+    margin:5px;
+    cursor: pointer;
+  }
+  .adjust{
+    top:50px;
+  }
+  #resume-section{
+    display:none;
+  }
+  #about-main{
+    margin-bottom: 250px;
+  }
+  a, a:hover, a:visited, a:active{
+    text-decoration:none;
+  }
+  .card {
+    margin-top:5px;
+    margin-bottom:5px;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+  }
+  .card-title {
+      margin-bottom: .75rem;
+  }
+  .card-subtitle {
+      margin-top: -.375rem;
+      margin-bottom: 0;
+  }
+  .card-link{
+    margin:0px 20px 0px 0px;
+  }
 </style>
 <!-- Slider Start -->
 <section id="slider">
@@ -67,8 +72,8 @@ a, a:hover, a:visited, a:active{
 
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">About</h1>
-          <p class="animated fadeInUp"> </p>
+          <h1 class="animated fadeInUp">Nathan Brigmon</h1>
+          <p class="animated fadeInUp">About</p>
         </div>
       </div>
     </div>
@@ -106,9 +111,23 @@ a, a:hover, a:visited, a:active{
 <script type="text/javascript">
   var portfolio = [
   {
+    "name":"CFNCR",
+    "link":"http://gwwdc.org/pages/gww-interactive-map/",
+    "description":"Searchable, sortable, interative web map built for nonprofit, workforce development research.",
+    "date":"Winter 2016",
+    "tech":['CartoDB', 'DataTables JS', 'Leaflet']
+  },
+  {
+    "name":"Sonoma-Mendocino Counties",
+    "link":"http://www.sonomamendocinoceds.com/regional-web-map/",
+    "description":"Wordpress site with web map for downloading and visualizing data in rural Northern California.",
+    "date":"Spring 2016",
+    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2']
+  },
+  {
     "name":"Full Stack Maps",
     "link":"http://fullstackmaps.com",
-    "description":"A website I set up for my consulting business. ",
+    "description":"This website I set up for my consulting business. It comes in handy sometimes!",
     "date":"Summer 2017",
     "tech":['Jekyll', 'Github Pages']
   },
@@ -118,20 +137,6 @@ a, a:hover, a:visited, a:active{
     "description":"A low cost GIS solution for rural communities in East Arkansas. We also built tutorials.",
     "date":"Fall 2014",
     "tech":['Google Maps API', 'Google Fusion Tables', 'Wordpress']
-  },
-  {
-    "name":"CFNCR",
-    "link":"??????",
-    "description":"Searchable, sortable, interative web map built for nonprofit, workforce development research.",
-    "date":"Winter 2016",
-    "tech":['CartoDB', 'DataTables JS', 'Leaflet']
-  },
-  {
-    "name":"Sonoma-Mendocino Counties",
-    "link":"??????",
-    "description":"Wordpress site with web map for visualizing data in rural Northern California.",
-    "date":"Spring 2016",
-    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2']
   },
   {
     "name":"Moovel/Ridescout ",
@@ -215,7 +220,7 @@ $("#view-resume").on('click', function(){
 });
 
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 100) {
+    if ($(document).scrollTop() > 150) {
       $('.sidebar').addClass('adjust');
     } else {
       $('.sidebar').removeClass('adjust');
