@@ -1,45 +1,57 @@
----
-layout: page
-active: about
-title: Full Stack Maps
-permalink: /about/
----
-
+--- layout: page active: about title: Full Stack Maps permalink: /about/ ---
 <style>
-  #about-main *{
+#about-main * {
     line-height: 2.5rem;
-  }
-  .sidebar {
+}
+
+#about-main ul {
+    list-style-type: circle;
+}
+
+#about-main ul li {
+    margin-left: 20px;
+}
+
+.sidebar {
     position: fixed;
     top: 383px;
     width: 200px;
     -webkit-transition: all 0.6s ease;
     transition: all 0.6s ease;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-  }
-  .sidebar ul li{
-    margin:5px;
+}
+
+.sidebar ul li {
+    margin: 5px;
     cursor: pointer;
-  }
-  .adjust{
-    top:50px;
-  }
-  #resume-section{
-    display:none;
-  }
-  #about-main{
+}
+
+.adjust {
+    top: 50px;
+}
+
+#resume-section {
+    display: none;
+}
+
+#about-main {
     margin-bottom: 250px;
-  }
-  a, a:hover, a:visited, a:active{
-    text-decoration:none;
-  }
-  .card {
-    margin-top:5px;
-    margin-bottom:5px;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.card {
+    margin-top: 5px;
+    margin-bottom: 5px;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -49,278 +61,261 @@ permalink: /about/
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
-  }
-  .card-body {
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-      padding: 1.25rem;
-  }
-  .card-title {
-      margin-bottom: .75rem;
-  }
-  .card-subtitle {
-      margin-top: -.375rem;
-      margin-bottom: 0;
-  }
-  .card-link{
-    margin:0px 20px 0px 0px;
-  }
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0;
+}
+
+.card-link {
+    margin: 0px 20px 0px 0px;
+}
 </style>
 <!-- Slider Start -->
 <section id="slider">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-10 col-md-offset-2">
-        <div class="block">
-          <h1 class="animated fadeInUp">Nathan Brigmon</h1>
-          <!-- <p class="animated fadeInUp">About</p> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+                <div class="block">
+                    <h1 class="animated fadeInUp">Nathan Brigmon</h1>
+                    <!-- <p class="animated fadeInUp">About</p> -->
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-  </div>
 </section>
-
 <section id="about-main">
-  <div class="container">
-    <!-- Content here -->
-    <div class="row">
-      <div id="portfolio-section" class="col-sm-8">
-        <h2>Portfolio</h2>
-      </div>
-      <div id="resume-section" class="col-sm-8">
-        <h2>Resume</h2>
-        <h3>Experience</h3>
-        <p>Mr. Brigmon has over 6 years of professional planning, Geographic Information Systems (GIS), Community Development, and Data Analytic experience. He has extensive experience in GIS, 3D modeling, web application development, and land use analysis. His professional accomplishments include: receiving Honorable Mention at the EPA’s P3 Design Competition for Sustainability; presenting his urban rail analysis in Austin, TX at the ESRI GeoDesign Summit in January 2015; and serving as Dean’s Ambassador for the UT School of Architecture. Mr. Brigmon’s experience as representative and analyst give him a range of skills and expertise on which to draw. He holds a BS in Business Administration from the College of Charleston and an MS in Community and Regional Planning from the University of Texas at Austin.</p>
-
-        <h3>Education</h3>
-        <p><b>M.S., 2013,</b> University of Texas, Community & Regional Planning</p>
-        <p><b>B.S., 2007,</b> The College of Charleston, Business Administration</p>
-
-<h3>Professional History</h3>
-<p>IT Geospatial Analyst, Senior, Austin Code Department, Austin, TX (2016-present)</p>
-<p>GIS Developer/Analyst, Civic Analytics, Austin, TX (2014-2016)</p>
-<p>Urban Planning Consultant, Independent, Austin, TX  (2013-2014)</p>
-<p>Graduate Research Assistant, Center for Sustainable Development, Austin, TX (2012-2013)</p>
-<p>Research and Marketing Assistant, Cooperation Texas, Austin, TX (2012)
-<p>Administrative Assistant, Augusta Tomorrow, Inc., Augusta, GA (2010-2011)</p>
-<p>Market Researcher, BairExport, Buenos Aires, ARG (2009)</p>
-<p>Research Intern, City of Charleston Department of Economic Development, Charleston, SC (2007)</p>
-
-<h3>Awards</h3>
-<p>2012 Honorable Mention, EPA P3 Student Design Competition for Sustainability</p>
-<p>Dean’s Ambassador, UT School of Architecture 2012-2013</p>
-
-<h3>Selected Projects</h3>
-<h4>University of Texas – Austin, CHAPA Project</h4>
-  <ul>
-    <li>A comparative study of development in Brazilian informal settlements funded via the National Science Foundation and led by UT School of Architecture.</li>
-    <li>Developed mobile and web applications, integrated land use and scenario planning frameworks, and designed technology and modeling workflows.</li>
-  </ul>
-
-<h4>Launch2035.org</h4>
-  <ul>
-    <li>Developed single-page web application containing interactive GIS map, data dashboard, and database interface using Node JS, Angular2, Express, and other Javascript Libraries/Frameworks.</li>
-    <li>Managed and collected all relevant GIS data and content including formats and metadata.</li>
-  </ul>
-
-<h4>East Arkansas Planning and Development District</h4>
-  <ul>
-    <li>Managed spatial datasets and web applications for data dashboard by collecting and creating GIS content.</li>
-    <li>Designed and produced online interactive tools, mapping applications, and tutorials by using low-cost Google Web APIs and understanding how they translate to GIS.</li>
-  </ul>
-
-<h4>Sonoma-Mendocino CEDS</h4>
-  <ul>
-    <li>Supported website developed through management of Amazon Elastic Cloud Computing, Linux, and GeoServer technologies.</li>
-    <li>Developed interactive GIS mapping application for socioeconomic, demographic, and land use visualizations.</li>
-  </ul>
-
-<h4>Los Platanitos</h4>
-  <ul>
-    <li>Implemented a solid waste management project in an informal settlement designed to bring revenue to the community, alleviate flooding, and reduce waste through vermicomposting and recycling.</li>
-    <li>Supervised construction and design process and created booklets, documents, and handouts for continued maintenance instruction.</li>
-    <li>Lectured and presented to a range of audiences, from youth in the Dominican Republic to officials at the US EPA, on topic of vermicomposting. The focus for these lectures was education, awareness, and maintenance as well as the story of Los Platanitos.</li>
-  </ul>
-
-<h4>KLE Foundation</h4>
-  <ul>
-    <li>Supported site selection analysis of future charters schools in Central Texas through custom reports revealing demographics, socioeconomic status, and market segmentation of custom geographies.</li>
-    <li>Provided client with custom ArcGIS python modules to allow for repeatable future analyses.</li>
-  </ul>
-
-<h4>Pape-Dawson / Meritage Homes </h4>
-  <ul>
-    <li>Analyzed economic, social, and environmental impacts comparing existing and proposed housing developments.</li>
-    <li>Created online, interactive 3D model illustrating benefits of one development plan over another.</li>
-    <li>Presented analytical and spatial findings to City Council.</li>
-  </ul>
-
-<h4>Project Connect via Center for Sustainable Development</h4>
-  <ul>
-    <li>Performed, documented, and refined economic development analyses exploring geospatial impacts of urban rail through the central core of Austin, TX.</li>
-    <li>Created 3D CityEngine models and GIS maps to relay data in visual form to Central Core Advisory Group stakeholders and other team members. </li>
-  </ul>
-
-<h4>Sustainable Places Project</h4>
-  <ul>
-    <li>Performed analysis, data collection, and product integration of ESRI’s City Engine and Fregonese and Associate’s Envision Tomorrow scenario tool to explore economic, environmental, visual, and land use impacts.</li>
-    <li>Managed, maintained, and administered project database to create smoother workflow, easier access, and increased collaboration among team members.</li>
-    <li>Acted as facilitator, organizer, and technical support during public meetings, design charrettes and internal team meetings.</li>
-  </ul>
-
-<h4>Other Projects</h4>
-  <ul>
-    <li>Mobility ATX Discussions - GIS Manager with Ridescout and Glass House Policy. Austin, TX Summer 2015.</li>
-    <li>Austin Technology Council Tech Study - Research and design for questionnaire concerning the pipeline of tech workers in Austin using Google Forms.</li>
-    <li>City of Austin’s Colony Park - Created 3D, publicly accessible models exploring future impact scenarios.</li>
-    <li>Lightning Talk Speaker at ESRI’s GeoDesign Summit January 22-23, 2015 discussing Economic Development Impacts of Urban Rail in Austin, TX.</li>
-    <li>Speaker at 2014 Texas GIS Forum presenting on the topic of GeoDesign’s future impact on planning. I showcased recent projects and talked about where the field of planning and GIS is headed.</li>
-    <li>Created interactive web mapping application using Google Application Scripts and Google Fusion Tables to display location and detailed information of Wind Turbines for clients working in the Wind Energy sector.</li>
-    <li>Created and presented maps demonstrating market potential, land use variation, vacancies, lot size, and boundaries through GIS analysis.</li>
-    <li>5th Street Market Study with Andrea Roberts, Ph. D Candidate - Center for Sustainable Development, UT - Austin. Developed demographic maps, outreach survey, and land use analysis.</li>
-    <li>Speaker at 2014 Texas GIS Forum presenting my work in 3D GIS and Geodesign explaining the potential my work has in impacted the usual planning process.</li>
-    <li>Speaker at 2013 Texas GIS Forum and the CSD’s City Forum presenting my work on integrating CityEngine, Envision Tomorrow, and Central Texas projects.
-    <li>Participant in featured project, “Community-Based Solid Waste Management in Santo Domingo, Dominican Republic,” Rio +20: United Nations Conference on Sust. Development, Rio de Janeiro, June 20-22, 2012.</li>
-    <li>Coauthor of bilingual Los Cinco Corazones: Human Development and Environmental Health through Community-Based Vermicomposting, June 2012
-    <li>Presenter on community development work at the EPA’s P3 Student Design Competition for Sustainability and at the Environmental Science Institute’s Lecture Fair at UT. </li>
-    <li>Poster Presenter, “Creating Value from Waste: Vermicomposting in the Dominican Republic” at National American Planning Conference, April 13-17, 2013. </li>
-    <li>Created marketing infographic based on client-tailored research for workers’ cooperative, Cooperation Texas.</li>
-    <li>Served as Dean’s Ambassador and Vice President of CRP Student Organization for the UT School of Architecture.</li>
-    <li>Author of “Keeping It Local: Lessons from the Dominican Republic”, Spring 2013 in The New Planner.</li>
-  </ul>
-
-      </div>
-      
-      <div class="col-sm-2">
-        <div class="sidebar">
-          <ul class="nav nav-pills nav-stacked">
-            <li class="nav-item btn btn-primary" role="button" id="view-portfolio">
-              Portfolio
-            </li>
-            <li class="nav-item btn btn-primary" role="button" id="view-resume">
-              Resume
-            </li>
-          </ul>
+    <div class="container">
+        <!-- Content here -->
+        <div class="row">
+            <div id="portfolio-section" class="col-sm-8">
+                <h2>Portfolio</h2>
+            </div>
+            <div id="resume-section" class="col-sm-8">
+                <h2>Resume</h2>
+                <h3>Experience</h3>
+                <p>Mr. Brigmon has over 6 years of professional planning, Geographic Information Systems (GIS), Community Development, and Data Analytic experience. He has extensive experience in GIS, 3D modeling, web application development, and land use analysis. His professional accomplishments include: receiving Honorable Mention at the EPA’s P3 Design Competition for Sustainability; presenting his urban rail analysis in Austin, TX at the ESRI GeoDesign Summit in January 2015; and serving as Dean’s Ambassador for the UT School of Architecture. Mr. Brigmon’s experience as representative and analyst give him a range of skills and expertise on which to draw. He holds a BS in Business Administration from the College of Charleston and an MS in Community and Regional Planning from the University of Texas at Austin.</p>
+                <h3>Education</h3>
+                <p><b>M.S., 2013,</b> University of Texas, Community & Regional Planning</p>
+                <p><b>B.S., 2007,</b> The College of Charleston, Business Administration</p>
+                <h3>Professional History</h3>
+                <p><b>IT Geospatial Analyst, Senior</b>, Austin Code Department, Austin, TX (2016-present)</p>
+                <p><b>GIS Developer/Analyst</b>, Civic Analytics, Austin, TX (2014-2016)</p>
+                <p><b>Urban Planning Consultant</b>, Independent, Austin, TX (2013-2014)</p>
+                <p><b>Graduate Research Assistant</b>, Center for Sustainable Development, Austin, TX (2012-2013)</p>
+                <p><b>Research and Marketing Assistant</b>, Cooperation Texas, Austin, TX (2012)</p>
+                <p><b>Administrative Assistant</b>, Augusta Tomorrow, Inc., Augusta, GA (2010-2011)</p>
+                <p><b>Market Researcher</b>, BairExport, Buenos Aires, ARG (2009)</p>
+                <p><b>Research Intern</b>, City of Charleston Department of Economic Development, Charleston, SC (2007)</p>
+                <h3>Awards</h3>
+                <p>2012 Honorable Mention, EPA P3 Student Design Competition for Sustainability</p>
+                <p>Dean’s Ambassador, UT School of Architecture 2012-2013</p>
+                <h3>Selected Projects</h3>
+                <h4>University of Texas – Austin, CHAPA Project</h4>
+                <ul>
+                    <li>A comparative study of development in Brazilian informal settlements funded via the National Science Foundation and led by UT School of Architecture.</li>
+                    <li>Developed mobile and web applications, integrated land use and scenario planning frameworks, and designed technology and modeling workflows.</li>
+                </ul>
+                <h4>Launch2035.org</h4>
+                <ul>
+                    <li>Developed single-page web application containing interactive GIS map, data dashboard, and database interface using Node JS, Angular2, Express, and other Javascript Libraries/Frameworks.</li>
+                    <li>Managed and collected all relevant GIS data and content including formats and metadata.</li>
+                </ul>
+                <h4>East Arkansas Planning and Development District</h4>
+                <ul>
+                    <li>Managed spatial datasets and web applications for data dashboard by collecting and creating GIS content.</li>
+                    <li>Designed and produced online interactive tools, mapping applications, and tutorials by using low-cost Google Web APIs and understanding how they translate to GIS.</li>
+                </ul>
+                <h4>Sonoma-Mendocino CEDS</h4>
+                <ul>
+                    <li>Supported website developed through management of Amazon Elastic Cloud Computing, Linux, and GeoServer technologies.</li>
+                    <li>Developed interactive GIS mapping application for socioeconomic, demographic, and land use visualizations.</li>
+                </ul>
+                <h4>Los Platanitos</h4>
+                <ul>
+                    <li>Implemented a solid waste management project in an informal settlement designed to bring revenue to the community, alleviate flooding, and reduce waste through vermicomposting and recycling.</li>
+                    <li>Supervised construction and design process and created booklets, documents, and handouts for continued maintenance instruction.</li>
+                    <li>Lectured and presented to a range of audiences, from youth in the Dominican Republic to officials at the US EPA, on topic of vermicomposting. The focus for these lectures was education, awareness, and maintenance as well as the story of Los Platanitos.</li>
+                </ul>
+                <h4>KLE Foundation</h4>
+                <ul>
+                    <li>Supported site selection analysis of future charters schools in Central Texas through custom reports revealing demographics, socioeconomic status, and market segmentation of custom geographies.</li>
+                    <li>Provided client with custom ArcGIS python modules to allow for repeatable future analyses.</li>
+                </ul>
+                <h4>Pape-Dawson / Meritage Homes </h4>
+                <ul>
+                    <li>Analyzed economic, social, and environmental impacts comparing existing and proposed housing developments.</li>
+                    <li>Created online, interactive 3D model illustrating benefits of one development plan over another.</li>
+                    <li>Presented analytical and spatial findings to City Council.</li>
+                </ul>
+                <h4>Project Connect via Center for Sustainable Development</h4>
+                <ul>
+                    <li>Performed, documented, and refined economic development analyses exploring geospatial impacts of urban rail through the central core of Austin, TX.</li>
+                    <li>Created 3D CityEngine models and GIS maps to relay data in visual form to Central Core Advisory Group stakeholders and other team members. </li>
+                </ul>
+                <h4>Sustainable Places Project</h4>
+                <ul>
+                    <li>Performed analysis, data collection, and product integration of ESRI’s City Engine and Fregonese and Associate’s Envision Tomorrow scenario tool to explore economic, environmental, visual, and land use impacts.</li>
+                    <li>Managed, maintained, and administered project database to create smoother workflow, easier access, and increased collaboration among team members.</li>
+                    <li>Acted as facilitator, organizer, and technical support during public meetings, design charrettes and internal team meetings.</li>
+                </ul>
+                <h4>Other Projects</h4>
+                <ul>
+                    <li>Mobility ATX Discussions - GIS Manager with Ridescout and Glass House Policy. Austin, TX Summer 2015.</li>
+                    <li>Austin Technology Council Tech Study - Research and design for questionnaire concerning the pipeline of tech workers in Austin using Google Forms.</li>
+                    <li>City of Austin’s Colony Park - Created 3D, publicly accessible models exploring future impact scenarios.</li>
+                    <li>Lightning Talk Speaker at ESRI’s GeoDesign Summit January 22-23, 2015 discussing Economic Development Impacts of Urban Rail in Austin, TX.</li>
+                    <li>Speaker at 2014 Texas GIS Forum presenting on the topic of GeoDesign’s future impact on planning. I showcased recent projects and talked about where the field of planning and GIS is headed.</li>
+                    <li>Created interactive web mapping application using Google Application Scripts and Google Fusion Tables to display location and detailed information of Wind Turbines for clients working in the Wind Energy sector.</li>
+                    <li>Created and presented maps demonstrating market potential, land use variation, vacancies, lot size, and boundaries through GIS analysis.</li>
+                    <li>5th Street Market Study with Andrea Roberts, Ph. D Candidate - Center for Sustainable Development, UT - Austin. Developed demographic maps, outreach survey, and land use analysis.</li>
+                    <li>Speaker at 2014 Texas GIS Forum presenting my work in 3D GIS and Geodesign explaining the potential my work has in impacted the usual planning process.</li>
+                    <li>Speaker at 2013 Texas GIS Forum and the CSD’s City Forum presenting my work on integrating CityEngine, Envision Tomorrow, and Central Texas projects.
+                        <li>Participant in featured project, “Community-Based Solid Waste Management in Santo Domingo, Dominican Republic,” Rio +20: United Nations Conference on Sust. Development, Rio de Janeiro, June 20-22, 2012.</li>
+                        <li>Coauthor of bilingual Los Cinco Corazones: Human Development and Environmental Health through Community-Based Vermicomposting, June 2012
+                            <li>Presenter on community development work at the EPA’s P3 Student Design Competition for Sustainability and at the Environmental Science Institute’s Lecture Fair at UT. </li>
+                            <li>Poster Presenter, “Creating Value from Waste: Vermicomposting in the Dominican Republic” at National American Planning Conference, April 13-17, 2013. </li>
+                            <li>Created marketing infographic based on client-tailored research for workers’ cooperative, Cooperation Texas.</li>
+                            <li>Served as Dean’s Ambassador and Vice President of CRP Student Organization for the UT School of Architecture.</li>
+                            <li>Author of “Keeping It Local: Lessons from the Dominican Republic”, Spring 2013 in The New Planner.</li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <div class="sidebar">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="nav-item btn btn-primary" role="button" id="view-portfolio">
+                            Portfolio
+                        </li>
+                        <li class="nav-item btn btn-primary" role="button" id="view-resume">
+                            Resume
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      
     </div>
-  </div>
 </section>
 <script type="text/javascript">
-  var portfolio = [
-  {
-    "name":"CFNCR",
-    "link":"http://gwwdc.org/pages/gww-interactive-map/",
-    "description":"Searchable, sortable, interative web map built for nonprofit, workforce development research.",
-    "date":"Winter 2016",
-    "tech":['CartoDB', 'DataTables JS', 'Leaflet']
-  },
-  {
-    "name":"Sonoma-Mendocino Counties",
-    "link":"http://www.sonomamendocinoceds.com/regional-web-map/",
-    "description":"Wordpress site with web map for downloading and visualizing data in rural Northern California.",
-    "date":"Spring 2016",
-    "tech":['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2']
-  },
-  {
-    "name":"Full Stack Maps",
-    "link":"http://fullstackmaps.com",
-    "description":"This website I set up for my consulting business. It comes in handy sometimes!",
-    "date":"Summer 2017",
-    "tech":['Jekyll', 'Github Pages']
-  },
-  {
-    "name":"East Arkansas Planning and Development District",
-    "link":"http://eapdd.com",
-    "description":"A low cost GIS solution for rural communities in East Arkansas. We also built tutorials.",
-    "date":"Fall 2014",
-    "tech":['Google Maps API', 'Google Fusion Tables', 'Wordpress']
-  },
-  {
-    "name":"Moovel/Ridescout ",
-    "link":"??????",
-    "description":"Interactive map visualizing people an jobs to assist with transit route alignment.",
-    "date":"Summer 2015",
-    "tech":['Leaflet', 'GitHub Pages']
-  },
-  {
-    "name":"Chapa",
-    "link":"http://www.chapa.io/",
-    "description":"A comparative research initiative focused upon the role of citizens in creating, applying, and visualizing data for urban design and development. Funded by the United States National Science Foundation, CHAPA is affiliated with The University of Texas at Austin, and based out of São Paulo, Brazil.",
-    "date":"Fall 2016",
-    "tech":['Squarespace', 'GoDaddy']
-  },
-  {
-    "name":"Launch2035",
-    "link":"http://launch2035.org/data",
-    "description":"Dashboard, Data Warehouse, and Web Map to support regional data initiative.",
-    "date":"Spring 2015",
-    "tech":['Angular 2-BETA', 'Leaflet', 'AWS EC2', 'Node JS', 'GeoServer']
-  },
-  {
-    "name":"Austin Code Task List Router",
-    "link":"http://austincodeit.github.io/route",
-    "description":"At Austin Code I built a router based off Code Inspectors' task list to help them route their day.",
-    "date":"Spring 2017",
-    "tech":['GitHub Pages', 'Google Maps API', 'Google Directions API', 'Dragula JS', 'Socrata API']
-  },
-  {
-    "name":"QGIS ThreeJS 3D Plugin",
-    "link":"https://twitter.com/natebrigmon/status/579349068708646913",
-    "description":"3D Interactive Mapping project that we hosted on Google Drive. Google Drive deprecated cloud hosting, so all I have is my tweet about it :(",
-    "date":"Winter 2015",
-    "tech":['Three JS', 'GitHub Pages']
-  },
-  {
-    "name":"Cesium JS",
-    "link":"http://fullstackmaps.com/screenshots/3d_brigmon_cesium.png",
-    "description":"3D Interactive Mapping project that I tested on AWS. Cesium is an exciting library and I hope to work with their stuff in the future. AWS costs money and without income we shut down the server :(",
-    "date":"Spring 2016",
-    "tech":['Three JS', 'GitHub Pages', 'Node JS', 'AWS']
-  }
+var portfolio = [{
+        "name": "CFNCR",
+        "link": "http://gwwdc.org/pages/gww-interactive-map/",
+        "description": "Searchable, sortable, interative web map built for nonprofit, workforce development research.",
+        "date": "Winter 2016",
+        "tech": ['CartoDB', 'DataTables JS', 'Leaflet']
+    },
+    {
+        "name": "Sonoma-Mendocino Counties",
+        "link": "http://www.sonomamendocinoceds.com/regional-web-map/",
+        "description": "Wordpress site with web map for downloading and visualizing data in rural Northern California.",
+        "date": "Spring 2016",
+        "tech": ['GeoServer', 'Wordpress', 'Leaflet', 'AWS EC2']
+    },
+    {
+        "name": "Full Stack Maps",
+        "link": "http://fullstackmaps.com",
+        "description": "This website I set up for my consulting business. It comes in handy sometimes!",
+        "date": "Summer 2017",
+        "tech": ['Jekyll', 'Github Pages']
+    },
+    {
+        "name": "East Arkansas Planning and Development District",
+        "link": "http://eapdd.com",
+        "description": "A low cost GIS solution for rural communities in East Arkansas. We also built tutorials.",
+        "date": "Fall 2014",
+        "tech": ['Google Maps API', 'Google Fusion Tables', 'Wordpress']
+    },
+    {
+        "name": "Moovel/Ridescout ",
+        "link": "??????",
+        "description": "Interactive map visualizing people an jobs to assist with transit route alignment.",
+        "date": "Summer 2015",
+        "tech": ['Leaflet', 'GitHub Pages']
+    },
+    {
+        "name": "Chapa",
+        "link": "http://www.chapa.io/",
+        "description": "A comparative research initiative focused upon the role of citizens in creating, applying, and visualizing data for urban design and development. Funded by the United States National Science Foundation, CHAPA is affiliated with The University of Texas at Austin, and based out of São Paulo, Brazil.",
+        "date": "Fall 2016",
+        "tech": ['Squarespace', 'GoDaddy']
+    },
+    {
+        "name": "Launch2035",
+        "link": "http://launch2035.org/data",
+        "description": "Dashboard, Data Warehouse, and Web Map to support regional data initiative.",
+        "date": "Spring 2015",
+        "tech": ['Angular 2-BETA', 'Leaflet', 'AWS EC2', 'Node JS', 'GeoServer']
+    },
+    {
+        "name": "Austin Code Task List Router",
+        "link": "http://austincodeit.github.io/route",
+        "description": "At Austin Code I built a router based off Code Inspectors' task list to help them route their day.",
+        "date": "Spring 2017",
+        "tech": ['GitHub Pages', 'Google Maps API', 'Google Directions API', 'Dragula JS', 'Socrata API']
+    },
+    {
+        "name": "QGIS ThreeJS 3D Plugin",
+        "link": "https://twitter.com/natebrigmon/status/579349068708646913",
+        "description": "3D Interactive Mapping project that we hosted on Google Drive. Google Drive deprecated cloud hosting, so all I have is my tweet about it :(",
+        "date": "Winter 2015",
+        "tech": ['Three JS', 'GitHub Pages']
+    },
+    {
+        "name": "Cesium JS",
+        "link": "http://fullstackmaps.com/screenshots/3d_brigmon_cesium.png",
+        "description": "3D Interactive Mapping project that I tested on AWS. Cesium is an exciting library and I hope to work with their stuff in the future. AWS costs money and without income we shut down the server :(",
+        "date": "Spring 2016",
+        "tech": ['Three JS', 'GitHub Pages', 'Node JS', 'AWS']
+    }
 ]
 
 //section for looping through projects and appending to project page
 
-for (let project of portfolio){
-  //loop through tech array and create search links
-  let tech = project["tech"].reduce(function(prev, next, i){
-    if (i == 1){
-      prev = '<a target="_blank" href="https://www.google.com/search?q='+prev.replace(/ /g, "+")+'" class="card-link">'+prev+'</a>';
-    }
-    return prev.concat('<a target="_blank" href="https://www.google.com/search?q='+next.replace(/ /g, "+")+'" class="card-link">'+next+'</a>');
-  });
-  let template = '<div class="card"><div class="card-body">'+
-    '<h4 class="card-title"><a target="_blank" href="'+project["link"]+'">'+project["name"]+'</a></h4>'+
-    '<h6 class="card-subtitle mb-2 text-muted">'+project["date"]+'</h6>'+
-    '<p class="card-text">'+project["description"]+'</p>'+
-    tech+'</div></div>';
-  $("#portfolio-section").append(template);
+for (let project of portfolio) {
+    //loop through tech array and create search links
+    let tech = project["tech"].reduce(function(prev, next, i) {
+        if (i == 1) {
+            prev = '<a target="_blank" href="https://www.google.com/search?q=' + prev.replace(/ /g, "+") + '" class="card-link">' + prev + '</a>';
+        }
+        return prev.concat('<a target="_blank" href="https://www.google.com/search?q=' + next.replace(/ /g, "+") + '" class="card-link">' + next + '</a>');
+    });
+    let template = '<div class="card"><div class="card-body">' +
+        '<h4 class="card-title"><a target="_blank" href="' + project["link"] + '">' + project["name"] + '</a></h4>' +
+        '<h6 class="card-subtitle mb-2 text-muted">' + project["date"] + '</h6>' +
+        '<p class="card-text">' + project["description"] + '</p>' +
+        tech + '</div></div>';
+    $("#portfolio-section").append(template);
 }
 
 //section for switching between portfolio and resume
-$("#view-portfolio").on('click', function(){
-  // console.log('click!')
-  $("#resume-section").hide();
-  $("#portfolio-section").show();
+$("#view-portfolio").on('click', function() {
+    // console.log('click!')
+    $("#resume-section").hide();
+    $("#portfolio-section").show();
 });
 
-$("#view-resume").on('click', function(){
-  $("#portfolio-section").hide();
-  $("#resume-section").show();
+$("#view-resume").on('click', function() {
+    $("#portfolio-section").hide();
+    $("#resume-section").show();
 });
 
-  $(window).scroll(function() {
+$(window).scroll(function() {
     if ($(document).scrollTop() > 150) {
-      $('.sidebar').addClass('adjust');
+        $('.sidebar').addClass('adjust');
     } else {
-      $('.sidebar').removeClass('adjust');
+        $('.sidebar').removeClass('adjust');
     }
-  });
+});
 </script>
- 
